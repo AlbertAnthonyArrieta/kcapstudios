@@ -1,7 +1,15 @@
 import React from 'react';
+import { motion } from 'framer-motion';
+
+import NavButton from './NavButton.jsx';
+
 import video from '../assets/LandingPageVideo.mp4'; // replace with your video file path
 
-export const Hero = () => {
+
+export const Hero = ( {changePage} ) => {
+
+
+
     return (
         <div className="hero">
             <h1 className="hero-title">WELCOME</h1>
@@ -10,11 +18,11 @@ export const Hero = () => {
                 <source src={video} type="video/mp4" />
             </video>
             <div className='navigation'>
-                <button className="nav-button active-link">home</button>
-                <button className="nav-button">projects</button>
-                <button className="nav-button">photography</button>
-                <button className="nav-button">cinematography</button>
-                <button className="nav-button">artwork</button>
+               <NavButton onClick={() => changePage('home')} label="home" />
+               <NavButton onClick={() => changePage('projects')} label="projects" />
+               <NavButton onClick={() => changePage('photography')} label="photography" />
+               <NavButton onClick={() => changePage('cinematography')} label="cinematography" />
+               <NavButton onClick={() => changePage('artwork')} label="artwork" />
             </div>
         </div>
     )

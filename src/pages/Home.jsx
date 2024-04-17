@@ -1,4 +1,7 @@
+import { motion } from 'framer-motion';
+
 import WhoImage from '../assets/who.png';
+
 
 export const Home = () => {
     return (
@@ -14,7 +17,13 @@ export const Home = () => {
                         leveraging my skills to  <strong>make a meaningful impact through the power of
                             multimedia arts.</strong>
                     </p>
-                    <img src={WhoImage} width="400vh" alt="Who?" />
+                    <motion.div
+                        initial={{ opacity: 0, y: -50 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.5 }}
+                    >
+                        <img src={WhoImage} width="400vh" alt="Who?" />
+                    </motion.div>
                 </div>
             </div>
         </>
