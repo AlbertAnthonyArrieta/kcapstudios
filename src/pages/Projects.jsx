@@ -1,9 +1,11 @@
+import RollingHeader from "../components/RollingHeader";
+
 export const Projects = () => {
     return (
         <>
-            <div className="home page">
+            <div className="projects page">
+                <RollingHeader />
                 <div className="container">
-                    <h1>Projects</h1>
                 </div>
             </div>
         </>

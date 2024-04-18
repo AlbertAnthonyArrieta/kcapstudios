@@ -1,5 +1,4 @@
 import React from 'react';
-import { motion } from 'framer-motion';
 
 import NavButton from './NavButton.jsx';
 
@@ -14,7 +13,7 @@ export const Hero = ( {changePage} ) => {
         <div className="hero">
             <h1 className="hero-title">WELCOME</h1>
             {/* add autoPlay to play */}
-            <video autoPlay loop muted className="hero-background">
+            <video loop muted className="hero-background">
                 <source src={video} type="video/mp4" />
             </video>
             <div className='navigation'>
