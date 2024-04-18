@@ -1,7 +1,7 @@
 /* Colors
     Black: #1E1E1E
     White: #ffffff
-    Gold: #D1BC59
+    Gold: #F2C360
 */
 
 :root {
@@ -97,7 +97,7 @@ h1 {
 }
 
 .active-link {
-  background-color: #D1BC59;
+  background-color: #F2C360;
   color: #1E1E1E;
 }
 
@@ -130,8 +130,8 @@ h1 {
 }
 
 .rollingHeader {
-  border-top: solid 1px #D1BC59;
-  border-bottom: solid 1px #D1BC59;
+  border-top: solid 1px #F2C360;
+  border-bottom: solid 1px #F2C360;
 }
 
 .rollingHeader-text {
@@ -140,10 +140,10 @@ h1 {
   font-weight: 400;
   font-style: italic;
   color: #fffff100;
-  border-top: solid 1px #D1BC59;
-  border-bottom: solid 1px #D1BC59;
+  border-top: solid 1px #F2C360;
+  border-bottom: solid 1px #F2C360;
   margin-top: 10px;
   margin-bottom: 10px;
   -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #D1BC59;
+  -webkit-text-stroke-color: #F2C360;
 }
