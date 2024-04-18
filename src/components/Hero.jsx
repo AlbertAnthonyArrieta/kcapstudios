@@ -14,7 +14,7 @@ export const Hero = ( {changePage} ) => {
         <div className="hero">
             <h1 className="hero-title">WELCOME</h1>
             {/* add autoPlay to play */}
-            <video loop muted className="hero-background">
+            <video autoPlay loop muted className="hero-background">
                 <source src={video} type="video/mp4" />
             </video>
             <div className='navigation'>
