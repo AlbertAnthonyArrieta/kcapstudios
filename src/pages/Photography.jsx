@@ -1,4 +1,6 @@
+import { React, useEffect } from "react";
 import { Fade } from "react-awesome-reveal";
+import Rellax from 'rellax';
 
 import RollingHeader from "../components/RollingHeader";
 
@@ -22,6 +24,19 @@ import nike8 from '../assets/nike/nike8.png';
 import nike9 from '../assets/nike/nike9.jpg';
 
 export const Photography = () => {
+
+    useEffect(() => {
+        new Rellax('.gallery-overlapper-text', {
+          speed: -4,
+          center: false,
+          wrapper: null,
+          round: true,
+          vertical: true,
+          horizontal: false
+        });
+      }, []);
+    
+
     return (
         <>
             <div className="photography page">

@@ -212,6 +212,7 @@ h1 {
 }
 
 .gallery-overlapper-text {
+  position: relative;
   font-size: 200px;
   line-height: 130px;
   background-color: #1a1919;
