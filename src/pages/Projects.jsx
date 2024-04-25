@@ -4,7 +4,7 @@ export const Projects = () => {
     return (
         <>
             <div className="projects page">
-                <RollingHeader />
+                <RollingHeader title="SOME PROJECTS"/>
                 <div className="container">
                 </div>
             </div>

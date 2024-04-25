@@ -1,3 +1,5 @@
+import { Fade } from "react-awesome-reveal";
+
 import RollingHeader from "../components/RollingHeader";
 
 import fenty1 from '../assets/fenty/1.png';
@@ -13,25 +15,35 @@ export const Photography = () => {
     return (
         <>
             <div className="photography page">
-                <RollingHeader />
+                <RollingHeader title="SOME PHOTOS" />
                 <div className="photography-project container">
                     <div className="photography-details">
-                        <h1 className="photography-header">FENTY</h1>
-                        <p className="photography-p">Product photoshoot for Fenty Beauty Ambassador, Maxine Alba to endorse the brand’s “Gloss Bomb Universal Lip Luminizer” and “Plush Puddin’ Intensive Recovery Lip Mask.”</p>
+                        <Fade triggerOnce direction="right">
+                            <h1 className="photography-header">FENTY</h1>
+                        </Fade>
+                        <Fade triggerOnce direction="down" delay="50">
+                            <p className="photography-p">Product photoshoot for Fenty Beauty Ambassador, Maxine Alba to endorse the brand’s “Gloss Bomb Universal Lip Luminizer” and “Plush Puddin’ Intensive Recovery Lip Mask.”</p>
+                        </Fade>
                     </div>
                     <div className="gallery">
                         <div className="gallery-double">
-                            <img src={fenty1} className="gallery-double-image"></img>
-                            <img src={fenty2} className="gallery-double-image"></img>
+                            <Fade triggerOnce cascade>
+                                <img src={fenty1} className="gallery-double-image"></img>
+                                <img src={fenty2} className="gallery-double-image"></img>
+                            </Fade>
                         </div>
 
                         <div className="gallery-horizontal">
-                            <img src={fenty3} className="gallery-horizontal-image"></img>
+                            <Fade triggerOnce>
+                                <img src={fenty3} className="gallery-horizontal-image"></img>
+                            </Fade>
                         </div>
 
                         <div className="gallery-double">
-                            <img src={fenty4} className="gallery-double-image"></img>
-                            <img src={fenty5} className="gallery-double-image"></img>
+                            <Fade triggerOnce cascade>
+                                <img src={fenty4} className="gallery-double-image"></img>
+                                <img src={fenty5} className="gallery-double-image"></img>
+                            </Fade>
                         </div>
 
                     </div>

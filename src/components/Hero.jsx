@@ -19,7 +19,7 @@ export const Hero = ({ changePage }) => {
                         <a href="#about">contact me</a>
                     </div>
                     {/* add autoPlay to play */}
-                    <video loop muted className='hero-video'>
+                    <video autoPlay loop muted className='hero-video'>
                         <source src={video} type="video/mp4" />
                     </video>
                 </div>
