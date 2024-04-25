@@ -141,10 +141,14 @@ h1 {
 
 .photography {}
 
-.photography-project {}
+.photography-project {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
 
 .photography-details {
-  margin-right: 600px;
+  margin-left: 200px;
+  margin-right: 400px;
 }
 
 .photography-header {
@@ -155,8 +159,8 @@ h1 {
   color: transparent;
   text-shadow: 0px 4px 2px #3D3D3D;
   -webkit-background-clip: text;
-     -moz-background-clip: text;
-          background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
 }
 
 .photography-p {
@@ -179,14 +183,64 @@ h1 {
 
 .gallery-double-image {
   width: 750px;
-  border-radius: 20px;
+  border-radius: 50px;
 }
-
-.gallery-horizontal {}
 
 .gallery-horizontal-image {
   width: 1510px;
-  border-radius: 20px;
+  border-radius: 50px;
+}
+
+.gallery-overlapper {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.gallery-overlapper-image {
+  width: 900px;
+  border-radius: 50px;
+}
+
+.gallery-overlapper-text-container {
+  display: flex;
+  justify-content: left;
+  align-items:first baseline;
+  margin-left: -150px;
+  margin-right: 150px;;
+
+}
+
+.gallery-overlapper-text {
+  font-size: 200px;
+  line-height: 130px;
+  background-color: #1a1919;
+  color: transparent;
+  text-shadow: 0px 4px 2px #3D3D3D;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+}
+
+.gallery-vertical-image {
+  width: 1500px;
+  border-radius: 50px;
+}
+
+.gallery-double-ll {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.gallery-double-ll-l-image {
+  width: 1030px;
+  border-radius: 50px;
+}
+
+.gallery-double-ll-s-image {
+  width: 455px;
+  border-radius: 50px;
 }
 
 .text-bold {

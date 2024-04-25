@@ -1,9 +1,11 @@
+import RollingHeader from "../components/RollingHeader";
+
 export const Cinematography = () => {
     return (
         <>
-        <div className="cinematography page">
-            <h1>Cinematography</h1>
-        </div>
+            <div className="cinematography page">
+                <RollingHeader title="SOME VIDEOS"/>
+            </div>
         </>
     )
 }
